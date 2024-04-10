@@ -1,0 +1,57 @@
+*{
+background-image: url(../../images/background-pattern-desktop.svg);
+}
+
+.faq-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+    border-radius: 15%;
+    padding: 20px;
+    background-color: rgb(232, 176, 238);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  
+    &__container {
+      position: relative;
+    }
+  
+    &__title {
+      margin-bottom: 20px;
+    }
+  
+    &__toggle-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  
+    &__items {
+      margin-top: 20px;
+    }
+  
+    &__item {
+      margin-bottom: 10px;
+    }
+  
+    &__question {
+      margin-bottom: 5px;
+    }
+  
+    &__answer {
+      display: none;
+    }
+  
+    &__item.open {
+      .faq-form__answer {
+        display: block;
+      }
+    }
+}
